@@ -108,5 +108,91 @@ Three main components in a cloud service solution.
 * Leading **cloud service providers (CSPs)**, like Microsoft and Amazon, operate a vast network of data centers worldwide
 *  data centers are designed with redundancy, ensuring reliable power supply, internet connectivity, and physical security.
 *  Cloud services cater to a wide range of consumers, encompassing individuals and businesses alike, on various platforms. These services can include **storage**, **email**, **e-commerce**, **office suites**, and **development environments**,
+* The primary operating systems used on these client devices include Microsoft Windows, Apple macOS, Linux, iOS, and Android.
+* The cloud service infrastructure can be managed internally by a single organization for its own use or managed by a CSP that provides services to many organizations. These two models can be combined into a hybrid solution.
+* The network serves as the pathway connecting the client devices to the data centers of the CSPs
+* Depending on the deployment model, the network connection can be owned and operated entirely by your company, providing a private and dedicated connection
+* Alternatively, access to cloud services can be facilitated through the internet, utilizing the public network infrastructure.
+
+* **Public cloud**:A CSP owns the cloud deployment and allocates its resources to external, unaffiliated customers.Those customers share the public cloud’s resources without knowing precisely where their data is in relation to that of any other organization
+* **Private cloud:** Services are provided to only a single organization
+* **Hybrid Cloud**: There is a combination of two or more private, public, or community deployments
+
+<img width="536" alt="Screenshot 2024-07-04 at 14 21 14" src="https://github.com/BafanaMadume/cloud-computing/assets/141032267/510a24af-1892-421f-884b-c28e236109a6">
+
+#### THE PUBLIC CLOUD
+* public cloud is a set of hardware, networking, storage, services, applications, and interfaces owned and operated by a third party for use by other companies or individuals.
+*  CSPs offer public cloud services to virtually any customer. Customers use a subscription model to pay for access.
+*  . Public clouds are viable because they offer many options for computing, storage, and a rich set of other services.
+*  With many resources always available, public cloud consumers can quickly select, optimize, and use those resources that match the needs of the applications they will run in the public cloud.
+*  Most public cloud providers offer a wide variety of APIs and services, such as security, and specialized infrastructure to support specific workloads like Graphic Processor Units (GPUs) for data science, application development pipelines, and other technologies to support customer needs.
+*  Less cost-effective than multi-tenant approach
+*  it is also on demand Availability
+![image](https://github.com/BafanaMadume/cloud-computing/assets/141032267/3dbb23d2-dbe6-4345-a7b2-5a91a9a866db)
+
+#### THE PRIVATE CLOUD
+* Owned and operated by an organization for its internal use (employees, partners, customers)
+* Can be managed by a 3rd party but exclusive to one company
+* Organization has full control over the deployment
+* Highly controlled environment, not publicly accessible (behind a firewall)
+* Focus on governance, security, and compliance
+* Appliance provides access to the vendor's public cloud services
+* Necessary for organizations with strict security requirements or compliance regulations 
+
+![image](https://github.com/BafanaMadume/cloud-computing/assets/141032267/ede628f9-528a-4af5-bb37-94c15f263b4f)
 
 
+#### THE HYBRID AND MULTICLOUD MODEL
+
+
+**Hybrid Cloud**
+
+* Combines private cloud with public cloud services
+* Goal: unified, automated, and well-managed computing environment
+* Users shouldn't differentiate between on-premises and cloud services
+
+**Multicloud**
+
+* Two or more public clouds used within an organization
+* Often arises from independent decisions by different teams
+* Requires multicloud management for visibility, control, and choice
+
+**Important Distinction**
+
+* Not all public+private cloud use is hybrid/multicloud
+* Hybrid/Multicloud creates value by using multiple services together
+
+**Not Hybrid/Multicloud**
+
+* Isolated public cloud use for development (no connection to private/data center)
+* Standalone SaaS application with no data exchange
+* Separate public cloud deployments for different departments
+
+**Hybrid/Multicloud Examples**
+
+* Public development platform sending data to private cloud/data center
+* Leveraging multiple SaaS applications with data movement
+* Business process designed as a service across environments
+* Using a SaaS analytics platform with data from multiple clouds
+* Moving workloads between public clouds based on cost/performance
+
+<img width="599" alt="Screenshot 2024-07-04 at 14 55 15" src="https://github.com/BafanaMadume/cloud-computing/assets/141032267/3fc82d9b-530e-4ff2-bd64-7d17407ff4d1">
+
+#### CLOUD WITHIN A CLOUD (Virtual Private Cloud)
+* virtual private cloud (VPC), the concept of cloud within a cloud means a public CSP hosts your organization’s cloud services in an isolated segment, separated from any resources shared with other companies.
+* Virtual private clouds are an example of single-tenant deployments. Sometimes there is confusion regarding the difference between VPC and private cloud deployments. Here are some key differences:
+
+* VPC–logical isolation of the cloud deployment that resides on a CSP's infrastructure (and is therefore scalable).
+* Private cloud–physical isolation of the cloud deployment in a private data center, a community data center, or CSP's infrastructure. It is limited by the available hardware and therefore less scalable.
+
+#### Multinenancy 
+This is the concept behind public cloud deployments. Multiple consumers, known as tenants, share computing resources owned and managed by the CSP. This is the opposite idea from a VPC deployment. It is multitenancy that provides the cost benefits behind shared resource utilization
+
+#### Multi-cloud
+ many multi-cloud variations, but some of the most common are combinations of cloud services spread among two or more public CSPs (such as AWS and Azure) as well as on a private cloud infrastructure. Multi-cloud deployments reduce reliance on a single vendor, provide greater service flexibility and choice, permit improved geographic control of data, and help manage disaster mitigation.
+
+![image](https://github.com/BafanaMadume/cloud-computing/assets/141032267/8fe08da6-b092-44c6-8534-ea4c5965ac7b)
+
+#### CLOUD COMPUTING ELEMENTS: RESOURCE POOLS/Cloud Models and Services
+
+![image](https://github.com/BafanaMadume/cloud-computing/assets/141032267/d37c856f-d282-4ad1-b9a8-007e9ed5414b)
