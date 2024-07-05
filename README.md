@@ -196,3 +196,130 @@ This is the concept behind public cloud deployments. Multiple consumers, known a
 #### CLOUD COMPUTING ELEMENTS: RESOURCE POOLS/Cloud Models and Services
 
 ![image](https://github.com/BafanaMadume/cloud-computing/assets/141032267/d37c856f-d282-4ad1-b9a8-007e9ed5414b)
+
+## CLOUD DELIVERY MODELS
+* **Infrastructure as a Service (Iaas):** The hardware infrastructure is provided to the consumer,The consumer assumes responsibility for all layers above that hardware.. The CSP manages hardware failures, firmware updates, device drivers, and hardware compatibility. **consumer installs** and **manages the operating system on top of the hardware as well as any services and applications that run above that operating system**
+* **Platform as a Service (PaaS):** The service structure is provided by the CSP It is up to the consumer to populate that structure, manage it on a day-to-day basis, and assume responsibility for the content. Support for the hardware, as well as the service platform that hosts the content, is offloaded to the CSP.
+* **Software as a Service (SaaS):**  consumer is being provided with the direct use of the software. Responsibility for the hardware where that software runs the operating system upon which it runs, and the installation and patching of the software itself are all offloaded to the CSP.
+
+#### INFRAsTRUCTURE AS A SERVICE(IaaS)
+
+* IaaS provides virtual servers with operating systems, storage, and networking on demand, similar to a physical server but more flexible.
+*  The easiest way to think of IaaS is that it provides a virtual server that is equivalent to a physical server — you have to select an operating system (for example, Linux, Windows, and so on), and everything “up the stack” to the applications that will run.
+* IaaS provides virtual servers with operating systems, storage, and networking on demand, similar to a physical server but more flexible.
+* There are two main types:
+    * **Public IaaS**: Offered by cloud providers like Amazon Web Services (AWS) or Microsoft Azure. Pay-as-you-go model, easy to access with a credit card.
+    * **Private IaaS**: Built by an organization's IT department for internal use or partners. Access is controlled by company policies and may involve users bringing their own tools.
+ 
+**Iaas Examples**
+* **AWS EC2**
+* **Microsoft Azure**
+* **Rackspace**
+* **Digital Ocean**
+
+**TARGET AUDIENCE**
+* IT administrators
+![Screenshot 2024-07-05 093910](https://github.com/BafanaMadume/cloud-computing/assets/141032267/ec73b160-b3f3-4eec-b207-6e475cdc3c9f)
+
+#### PLATFORM AS A SERVICE(PaaS)
+
+* PaaS builds upon IaaS by adding a layer of development tools and middleware on top.
+* This allows organizations to focus on application development without worrying about infrastructure setup or operating systems.
+* Think of it as a ready-made development environment on the cloud or within your own network.
+* PaaS can be used for general development or specific platforms like Salesforce, which allows creation of industry-tailored CRM applications.
+* Overall, PaaS increases development speed and efficiency
+* A PaaS offers a consistent set of programming and middleware services that ensure developers have a well-tested and well-integrated way to create applications in a cloud environment.
+*  A PaaS environment brings development and deployment together to create a more manageable way to build and deploy applications.
+
+ **PaaS Examples**
+ 
+*  **Google App Engine**
+*  **Heroku**
+*  **AWS ElasticBeanstalk**
+*  **Salesforce**
+
+**Target Audience**
+
+* Developers
+* DBAs
+
+![Screenshot 2024-07-05 095928](https://github.com/BafanaMadume/cloud-computing/assets/141032267/48621735-7383-44d4-922d-48068349352d)
+
+#### SOFTWARE AS A SERVICE(SaaS)
+* SaaS provides complete, ready-to-use business applications over the internet.
+* These applications are hosted by the provider (like Google or Salesforce) and accessible through a web browser.
+* Multiple users from different companies can access the same application (multi-tenant model).
+* Customers pay a subscription fee, typically per user, and don't need to worry about maintaining underlying infrastructure or platforms.
+* Their main concern is the application's functionality, performance, security, and how well it meets their needs
+
+  **SaaS Examples**
+  * Microsoft Office 365
+  * Google Apps
+  * WebEx
+  * Dropbox
+  * Netflix
+ 
+**Target Audience**
+* End-users
+
+![Screenshot 2024-07-05 100649](https://github.com/BafanaMadume/cloud-computing/assets/141032267/556be05b-4a0a-4d34-9542-95c11d9572d3)
+---
+
+## THE COMPUTING RESOURCES LIFE CYCLE
+* A basic concept of both public and private cloud computing is that users only employ computing resources when needed and pay only for the resources they actually utilize during the time they use them.
+* **Pay-as-you-go model:** Cloud users only pay for the resources they use, unlike traditional data centers where resources are purchased upfront.
+* **Scalability:** Cloud providers need to have extra resources available to handle unpredictable user demands. 
+* **Resource metering:** Cloud providers closely monitor resource usage to accurately bill users.
+* **Dynamic allocation:** When a user finishes using a resource, it's returned to the pool for others to use.
+* **Elasticity:** Cloud providers can use additional services from other providers to meet unexpected demands, without impacting the user experience.
+
+### UNDERSTANDING SELF-SERVICE PROVISIONING AND ELASTICITY
+
+**SELF-SERVICE PROVISIONING**
+* Cloud users can directly order, configure, and launch cloud services through a web interface, in minutes or even seconds
+* This eliminates the traditional data center approach where IT departments handle requests, leading to delays and hindering development.
+
+**Benefits of Self-service Provisioning**
+* Faster application development and deployment.
+* Quicker time to market for new products and services.
+* Reduced costs by eliminating manual IT involvement.
+
+**Elasticity:**
+* Cloud resources can automatically adjust their capacity based on usage.
+* This ensures resources are available when needed (scaling up) and avoids unnecessary costs when not in use (scaling down).
+
+Benefits of Elasticity:
+* Improved application performance by having resources readily available
+* Cost efficiency by paying only for what you actually use.
+
+* Together, self-service provisioning and elasticity empower cloud users to be more agile and cost-effective.
+
+### ESTABLISHING A DYNAMIC LIFE CYCLE ACROSS WORKLOADS AND DATA
+
+**Cloud as federated environment**
+* The cloud consists of various resources spread across locations.
+* These resources work together to deliver services.
+* Workloads (independent services) need to be organized for efficient management.
+
+**Workload placement**
+* Workloads should be placed in the appropriate cloud environment (public, private) based on their needs.
+* Legacy systems might require a private cloud for faster transactions.
+
+**MULTI-Cloud strategy**
+* Organizations should consider using multiple cloud providers for optimal benefits.
+* This allows workloads and data to move seamlessly across different providers and regions.
+
+**Workload considerations for a dynamic life cycle**
+
+* Location: Place workloads near customers for better performance.
+* Scalability: Adapt workloads based on changing demand (up or down).
+* Cost and features: Move workloads between providers for better cost, reliability, or features.
+
+  #### Management Services
+* **Importance:** Management services are essential for ensuring your cloud applications function well and meet user needs (customers, employees, partners). This applies to any cloud deployment model (public, private, hybrid).
+* **Core services:**
+    * Network monitoring: Identifies and addresses network issues that can disrupt user experience.
+    * Application/workload health monitoring: Detects potential problems in applications and helps support teams deliver better service.
+    * Security and governance: Protects applications, data, and ensures compliance with regulations.
+    * Data management: Facilitates data movement between cloud and physical environments in hybrid models.
+* **Integration services:** Manage connections between different cloud environments (hybrid and multi-cloud) for seamless operation.
