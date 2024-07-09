@@ -895,11 +895,7 @@ While these considerations overlap with public cloud consumption, there are key 
 * **Focus:** Private cloud providers have a single customer (themselves) and a greater incentive to ensure all services function effectively, potentially leading to faster issue resolution.
 * **Management Focus:**  Monitoring SLAs becomes a priority for internal stakeholders, including executives, as performance directly impacts the company's bottom line.
 
-#### Managing Internal services
-
-## Supporting Internal Cloud Users in a Private/Hybrid Cloud Environment
-
-This passage dives into user support considerations for private and hybrid cloud deployments.
+## Managing Internal services
 
 **Key Points:**
 
@@ -920,10 +916,10 @@ This passage dives into user support considerations for private and hybrid cloud
 * **Automated Monitoring and Reporting:**  Automate performance testing and reporting to reduce manual effort.
 * **Alerting System:**  Implement an automated notification system to alert support teams of critical performance issues.
 
-#### Monitoring The Cloud Infrastructure  
+## Monitoring The Cloud Infrastructure  
 * Monitoring Private/Hybrid Clouds: Similar to public cloud vendors, organizations should monitor the operational status of their private and hybrid cloud environments to ensure basic services are functioning properly. This information is crucial for initial troubleshooting by support personnel
 
-#### Monitoring applications and Services
+## Monitoring applications and Services
 
 * **Support Personnel:** Application usage data helps support teams understand user actions and troubleshoot issues effectively.
 * **User Experience (UX) Experts:** By analyzing user interactions, UX experts can identify interface issues, streamline workflows, and discover bugs.
@@ -948,7 +944,7 @@ Dashboards are a powerful tool for presenting operational data to specific user 
 * **Product Managers:** Highlights KPIs and usability data.
 * **Executives:** Provides high-level status updates and customer acceptance metrics.
 
-#### Managing External Services
+## Managing External Services
 * One characteristic of a hybrid cloud environment is that an organization will have a variety of services that need to be managed.
 * To be successful, visibility and control over external and internal resources is critical.
 
@@ -981,7 +977,7 @@ Dashboards are a powerful tool for presenting operational data to specific user 
 * **Scalability and Redundancy:**  Designing applications to scale and have redundant components ensures service continuity during failures.
 * **Robust Monitoring:**  Continuously monitoring applications and infrastructure helps identify and address potential issues proactively.
 
-#### The Future of Multicloud Management
+## The Future of Multicloud Management
 
 * **Hybrid Cloud Fabric:**  Multiple services and deployment models are creating a complex hybrid cloud landscape.
 * **Unified Management:**  The ability to manage all internal and external cloud services is becoming increasingly critical.
@@ -1000,3 +996,71 @@ Dashboards are a powerful tool for presenting operational data to specific user 
 * Avoid managing services as isolated entities (applications, storage, etc.).
 * Implement an infrastructure and approach that provides a unified interface across all services.
 * This ensures consistency, predictability, and simplifies overall management.
+
+# 5 Standards in A MultiCloud World
+* Defining standards.
+* Understanding the evolution of standards.
+* Categorizing standards.
+
+## What are Standards
+* Standards are established common and repeatable practices that have been agreed to by a business or group.
+* An open standard is one that is publicly and freely available, one that has been developed in a public context where anyone who is affected by the standard can contribute.
+* An open standard assumes that experienced developers will contribute to the viability of the offering.
+*  different vendors, groups, and end users collaborate to develop standards based on the broad expertise of a large number of stakeholders.
+*  Organizations can leverage these standards as a common foundation and build on top of them
+*  Broad adoption of open standards throughout an industry or other groups is critical in order to yield the benefits
+*  Building software that complies with standards allows systems to work together, reduces costs by allowing competition between different implementations of a standard, and gives consumers more choices while ensuring compatibility.
+*  Simply put, without standards or agreed upon approaches, moving your infrastructure or applications from one cloud provider to another or from on-premises to a public or private cloud is a difficult prospect that can slow an organization’s development.
+
+**Evolution of Standards**
+Standards have generally been established in four ways:
+
+1. **Multinationall bodies**:Treaties or other similar international legal agreements typically govern these bodies. These groups generally have long procedures and red tape before an agreement is reached. Members may be diplomats instead of technical experts.
+   - The International Organization for Standards (ISO) is one such group and is comprised of representatives from countries all over the world.
+   -  ISO has developed more than 17,500 standards covering many subject areas,
+   -  Governance: Treaties or international agreements.
+   -  Process: Lengthy procedures and bureaucracy.
+  **Multinational Bodies (e.g., ISO):**
+    * Governance: Treaties or international agreements.
+    * Process: Lengthy procedures and bureaucracy.
+    * Members: Typically diplomats, not always technical experts.
+    * Benefits: Broad global recognition.
+    * Examples: International Organization for Standards (ISO).
+
+2. **Industry Consortiums (e.g., Apache Group):**
+    * Governance: Self-organized, often around specific industry needs.
+    * Process: More streamlined and quicker than multinational bodies.
+    * Members: Usually include competitors who collaborate for mutual benefit.
+    * Benefits: Faster development and agility.
+    * Examples: The Apache Software Foundation, The Open Group, World Wide Web Consortium (W3C), OASIS.
+* A consortium is typically an organized group dedicated to developing standards for a specific industry requirement.
+* Even though the members may be competitors, they know that coming together will help everyone.
+*  The Apache Group, The Open Group, World Wide Web Consortium, and OASIS are some examples of industry consortiums.
+
+3. **Ad Hoc Groups:**
+    * Governance: Self-organized with minimal procedures.
+    * Process: Very flexible and adaptable.
+    * Formation: Often built around open-source initiatives.
+    * Benefits: Fastest development and ability to adapt to rapid technological change.
+    * Drawbacks: Difficulty reaching consensus on complex issues.
+    * Examples: Loosely organized online communities or more formal open-source project groups.
+*  Ad hoc groups are self-organized and governed. These groups are often built around open-source initiatives.
+*  They can be a loose body that discusses their matters through an Internet message board, or they may be more formally organized.
+*  These groups have even fewer processes than industry consortiums and are therefore able to quickly adapt and change as technology moves.
+*  A downside to the lower process overhead is that when difficult decisions need to be made or problems arise, getting to the correct solution and reaching a consensus may be difficult or impossible.
+  
+4. **De Facto Standards:**
+    * Emergence: Arise organically through widespread adoption of a particular approach or product.
+    * Creation: Not established by a specific body, but by industry practices.
+    * Example: Popular programming languages or protocols.
+* A de facto standard emerges when an approach or product is used so extensively used that it becomes a standard
+*  important distinction is that a de facto standard is not created by a specific body or organization, but instead develops through practice. Often, de facto standards emerge when industry best practices converge.
+
+**According to the National Institute of Standards and Technology (NIST), standards can be categorized based on their level of maturity**
+
+* None
+* Under Developmet
+* Approved
+* A reference
+* Market accepted
+* Retired 
