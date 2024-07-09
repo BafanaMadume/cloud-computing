@@ -744,3 +744,259 @@ This passage explains the complexities of hybrid cloud architectures and how to 
 * **Reduced Dependencies:** Minimize dependencies between services to enable future flexibility.
 * **Performance Optimization:** Prioritize performance to ensure a positive customer experience.
 * **Predictability, Security, and Governance:** Create a reliable, secure, and well-managed environment for long-term business success.
+
+## MANAGING A HYBRID AND MULTICLOUD ENVIRONMNENT
+
+**What Are You Managing**
+**Divided the capabilities that you will need to manage into five categories:**
+
+* SaaS applications
+* External cloud resources
+* Internal cloud resources
+* External cloud resources
+* Managing external services
+
+#### Managing SaaS Applications
+** challenges and solutions for IT departments in managing SaaS applications used by businesses.**
+**Challenges:**
+
+* Employees can easily use unauthorized SaaS applications, leading to security risks and lack of control for IT.
+* SaaS applications vary in quality - some lack features important for businesses, like secure data storage and integration with other applications.
+* When there are issues with a SaaS application, users expect IT to fix them regardless of the real cause (SaaS vendor or cloud provider).
+
+**Solutions:**
+
+* Collaborate with business units to create a list of approved SaaS applications that meet security and usability needs.
+* Develop a central repository of approved SaaS applications for easy access and employee self-service.
+* Encourage employees to report unmet needs so IT can find authorized solutions.
+* Proactively research and approve a comprehensive set of SaaS tools to reduce reliance on unauthorized options.
+* Act as an advocate for users when there are problems with SaaS applications, even if they are caused by external vendors.
+
+**Optimizing SaaS Management**
+Once a business has set the ground rules for using SaaS within the organization and educated users on the best practices of using public SaaS applications, it can take additional steps to improve costs, productivity, and security. As use of SaaS applications expands through an enterprise, IT and security teams should review use of SaaS applications. Security should examine actual use to understand whether any practices are risking loss of the business’s intellectual property (IP), 
+
+**A SaaS Cautionary Tale**
+As a business modernized itself with a cloud-based office productivity suite for creating marketing content, employees were thrilled with the ability to create and edit content at any time, whether in the home office or on the road
+Their organization was widely distributed physically and having their documents in the cloud allowed sharing and reviews from many divisions of the business, regardless of where they were located.
+* Users quickly became used to the SaaS application and became dependent on its powerful features.
+* * Cloud suite benefits: Increased flexibility for remote work and document collaboration.
+ * Outage impact: Major disruption due to widespread reliance on the suite.
+ * IT challenges:
+    * Blamed despite limited control over vendor's service.
+    * Unclear responsibility with existing SLA.
+    * Difficulty identifying outage source (application, network, etc.)
+ * Potential IT shortcomings:
+    * Lack of redundancy plan (failover solution).
+    * Weak SLA with the vendor (uptime guarantees, communication).
+ * The fix: Proactive IT measures for business continuity.
+    * Redundancy plans (alternative solutions or secondary vendor).
+    * Stronger SLAs (uptime guarantees, clear communication during outages).
+  
+---
+* Cloud Access Management (CAM) =  is a form of identity management that is specifically targeted to cloud service.
+*  Using CAM, users can be explicitly given rights to specific SaaS applications (and not to others), and governance specified for what information they can access.
+*  Security can use CAM to formalize which company personnel can access which SaaS applications and the rights they can exercise within SaaS applications.
+*  IT will be interested in how many employees are using each SaaS application, and what they use the application for.
+*   As more people use a SaaS application, IT may be able to use that information to negotiate better terms for using the SaaS application from its vendor.
+
+#### Managing External Cloud Resources
+* Businesses use many types of external or public cloud resources that require management. Resources may be virtual machines that developers use, storage for backups or disaster recovery, databases for big data activities
+* Cloud resources are the building blocks used to create applications. These infrastructure services are designed as a layer below SaaS applications and therefore are the responsibility of software developers.
+* Understanding who is using cloud services is important because that is where management should be focused.Management of cloud services is typically practiced in IT and software development organizations.
+
+**Visibility and Control of External Resources**
+
+* As with SaaS applications, simply grabbing a cloud resource to execute a task is often too easy. To be successful, you need to have the ability to apply controls so that you can gain visibility into the cloud applications and services.
+* The biggest management challenges of external cloud resources are identifying the most appropriate services to use, verifying their characteristics (performance, security, cost, and so on), and making sure that these services are used exclusively.
+* The rationale for using these resources to the exclusion of other resources is that after a service has been selected, investments in training, testing, and building infrastructure software will occur to make the service work effectively.
+* We should avoid selecting and using a different service that has the same functionality, as it can double the costs of using the functionality.
+
+**The General cycle for approval ,use ,and eventual resue of cloud services is**
+
+1. Identify and define the functional requirements of the software being developed.
+2. Research resources available from the cloud providers that are already used by the business to find a good match. Extend the search to other cloud providers if adequate solutions are not found or if additional cloud providers should be nurtured in the spirit of multicloud.
+3. Perform tests in a pilot project to verify the resource(s) found in Step 2 meet the functional requirements.
+4. If the testing is successful, form a business relationship with the service vendor and get access to the production version of the resource. The vendor may be a cloud provider or a third party who makes its software available in a cloud platform. If the testing is not successful, go back to Step 2 or consider building the resource internally.
+5. Document the new service and its availability to the full development organization.
+6. On a regular basis, perhaps yearly, revisit existing resources (internally developed as well as external resources), the requirements they need to meet, and their operational history and issues.
+
+**The Importance of Self Service**
+* The idea of creating a catalogue of approved computing resources that consumers may select from is critical to being able to manage in a consistent and predictable way. It is a simple idea, but a very important one.
+* Cloud providers make it as easy as possible for consumers to find and use their services. At the low pay-as-you-go prices of most cloud resources.
+
+* The challenge is to make it easier for employees to use the company’s catalogue to select what they want rather than go to the cloud themselves. To do so, the company must get ahead of the curve to understand the requirements and needs of development organizations.
+
+#### SERVICE LEVEL AGREEMENTS (SLAs) 
+* Every cloud resource comes with a contractual agreement, known as a service level agreement (SLA),that outlines what the provider is delivering, along with the customer’s responsibilities
+
+**Cloud Service Level Agreements (SLAs) Explained in Bullet Points:**
+
+* **What is an SLA?** A contract between a cloud provider and customer outlining service delivery and responsibilities.
+* **What's included in an SLA?** It details factors like uptime, accuracy, response time, security, etc. These are crucial for choosing resources that meet performance needs.
+* **Vendor vs. Customer Responsibility:**
+    * Vendor is responsible for outages due to their mistakes (misconfiguration).
+    * Vendor is clearly responsible for security breaches they cause.
+    * Grey areas exist: outages due to natural disasters or third-party network issues might not be covered.
+* **Vendor's Liability:** Even if responsible, an SLA might not cover lost business during downtime. Customers may need separate insurance.
+* **Performance Claims:** SLAs also define performance guarantees. Uptime is a key metric, with vendors competing for the highest percentage (e.g., 99.99% vs. 99.999%). 
+* **Downtime Impact:** A small difference in uptime can translate to significant downtime depending on the workload (e.g., minutes for a test vs. disaster for a critical system).
+
+![Screenshot 2024-07-09 103908](https://github.com/BafanaMadume/cloud-computing/assets/141032267/2dc7a571-0468-4b6d-978d-2e33d2ada7e3)
+
+#### ADDRESSING POOR CLOUD AND COMPUTING BEHAVIORS
+**Curbing Risky Cloud and Computing Behaviors:**
+
+* **Security Threats:** Even with secure cloud environments, user actions can introduce risks.
+    * Weak passwords are a prime example, potentially leading to data breaches or system damage. 
+* **BYOD (Bring Your Own Device):**  Security concerns arise when employees use personal devices for work.
+    * IT needs to ensure proper software and security best practices are followed on these devices.
+* **Employee Education:**  Training employees about cybersecurity risks associated with poor practices is crucial.
+* **Governance Strategies:**  Companies implement controls to define which systems/data employees can access based on their roles (Role-Based Access Control - RBAC).
+* **Social Media Risks:**  Sharing company information or practices on social media can be a security concern, especially for younger employees unfamiliar with the risks.
+
+### Managing Internal Cloud Resources
+
+## Key Considerations for Managing Internal Cloud Resources
+
+As cloud adoption becomes widespread for delivering services, effective resource management is critical for success. Here's a breakdown of key considerations for private and hybrid cloud deployments:
+
+| Consideration | Description |
+|---|---|
+| Self-Service | Empowering internal users with self-service capabilities for cloud resources streamlines access and provisioning. |
+| SLAs (Service Level Agreements) | Establishing SLAs ensures consistent performance and accountability for cloud services provided internally. |
+| Approved Resources | Maintaining a catalog of approved resources ensures users have access to secure and compliant cloud services. |
+
+While these considerations overlap with public cloud consumption, there are key differences:
+
+| Consideration | Private/Hybrid Cloud | Public Cloud |
+|---|---|---|
+| Consumer Base | Typically limited to a single business, allowing for more targeted service offerings. | Highly diverse consumer base with a wider range of needs. |
+
+### Managing a hybrid cloud environment
+
+* **Security Focus:** Briefly mention how stricter security requirements in private/hybrid clouds can translate to a more curated selection process, leading to a secure and compliant environment.
+* **Internal SLAs:** You could touch upon the importance of defining Service Level Agreements (SLAs) for internal cloud services to ensure performance meets user expectations.
+* **Monitoring Differences:** Briefly highlight the difference in monitoring responsibilities between public and private clouds. Public cloud vendors manage their resources, while private cloud IT teams take the lead.
+
+**Understanding the role of internal SLAs**
+**Why are SLAs important?**
+
+* **Formalized Expectations:** SLAs define clear performance and operational targets for internal cloud services, improving user satisfaction.
+* **Performance Troubleshooting:**  SLAs provide objective benchmarks to identify issues. Performance problems can be attributed to the application itself or the underlying resources based on SLA adherence.
+
+**Responsibilities:**
+
+* **Public Cloud:** The public cloud vendor is responsible for managing resources and meeting SLAs. However, customers (businesses) should monitor the vendor's performance to ensure compliance. 
+* **Private Cloud:** IT operations have the primary responsibility for monitoring private cloud resources and services to meet internal SLAs.
+
+**Key Differences:**
+
+* **Responsiveness:** Public cloud vendors might have slower response times due to their larger customer base.
+* **Focus:** Private cloud providers have a single customer (themselves) and a greater incentive to ensure all services function effectively, potentially leading to faster issue resolution.
+* **Management Focus:**  Monitoring SLAs becomes a priority for internal stakeholders, including executives, as performance directly impacts the company's bottom line.
+
+#### Managing Internal services
+
+## Supporting Internal Cloud Users in a Private/Hybrid Cloud Environment
+
+This passage dives into user support considerations for private and hybrid cloud deployments.
+
+**Key Points:**
+
+* **Diverse User Base:**  Internal cloud services cater to users across departments with varying technical expertise. They expect reliable, secure applications with professional support, regardless of the cloud environment (private, public, or hybrid).
+* **Support Responsibilities:**  Support for internal applications can come from IT or a dedicated internal call center. 
+* **Effective Support:**  Providing timely and high-quality support is crucial. 
+    * **Third-Party Applications:** Support relies on the vendor although internal support should be aware of common user issues.
+    * **Internal Applications:** Development teams play a role in supporting internally developed applications.
+* **Collaboration is Key:**  Development and support teams need to work closely to ensure robust applications with minimal support needs.
+* **Monitoring Public Cloud Resources in Hybrid Clouds:**  Several approaches exist to monitor the performance of public cloud resources used in a hybrid environment:
+    * **Separate Test Environment:**  Pros: Avoids impacting application performance. Cons: Results may not reflect real-world application experience.
+    * **Test Software in Hybrid Cloud:**  Pros: More realistic performance testing. Cons: Can impact hybrid cloud infrastructure performance.
+    * **Public Cloud Resource Dashboard:**  Pros: Easy access to performance information if available. Cons: Relies on vendor-provided data.
+    * **Application Instrumentation:**  Pros: Most accurate performance monitoring, minimal impact on application. Cons: Requires careful implementation.
+
+**Best Practices:**
+
+* **Automated Monitoring and Reporting:**  Automate performance testing and reporting to reduce manual effort.
+* **Alerting System:**  Implement an automated notification system to alert support teams of critical performance issues.
+
+#### Monitoring The Cloud Infrastructure  
+* Monitoring Private/Hybrid Clouds: Similar to public cloud vendors, organizations should monitor the operational status of their private and hybrid cloud environments to ensure basic services are functioning properly. This information is crucial for initial troubleshooting by support personnel
+
+#### Monitoring applications and Services
+
+* **Support Personnel:** Application usage data helps support teams understand user actions and troubleshoot issues effectively.
+* **User Experience (UX) Experts:** By analyzing user interactions, UX experts can identify interface issues, streamline workflows, and discover bugs.
+* **Product Managers:** User activity data helps product managers confirm feature usage and identify opportunities for improvement or new features.
+* **Developers:** Application logs provide insights into crashes, operational patterns, and areas for application optimization. 
+* **Business Analysts:**  Key Performance Indicators (KPIs) derived from application data reveal if applications are meeting business goals.
+* **AI and Machine Learning:** Advanced analytics can identify recurring problems or predict potential issues based on historical data.
+
+**Data Visualization for Informed Decisions:**
+
+The vast amount of data generated by cloud applications necessitates effective presentation for user comprehension. Here's how information is transformed for better decision-making:
+
+* **Analysis Software:** Processes and condenses raw data into a manageable format.
+* **Visualization Techniques:** Present information in a clear and visually appealing way (e.g., charts, graphs).
+
+**Dashboards: Tailored Information for Different Audiences:**
+
+Dashboards are a powerful tool for presenting operational data to specific user groups with customized views based on their needs:
+
+* **Support:** Focuses on user troubleshooting information.
+* **Developers:** Emphasizes performance data and user behavior insights.
+* **Product Managers:** Highlights KPIs and usability data.
+* **Executives:** Provides high-level status updates and customer acceptance metrics.
+
+#### Managing External Services
+* One characteristic of a hybrid cloud environment is that an organization will have a variety of services that need to be managed.
+* To be successful, visibility and control over external and internal resources is critical.
+
+**DevOps and Deployment to Public Clouds**
+* best practices for developing software for the cloud are based on DevOps practices.
+* DevOps combines Development with Operations and enables continuous development and deployment of software.
+* DevOps streamlines the management of application and service life cycles by eliminating handoffs between development and operations and makes the software more robust because developers are now paying more attention to operational issues.
+* After an application is deployed to the cloud, DevOps engineers continue to watch the software while it is running.
+*  If operational issues come up, the engineers responsible for the software are immediately involved and can either solve problems tactically in the cloud or, if necessary, make changes to the application and redeploy it with fixes as quickly as the code can be changed and tested.
+
+**External System Monitoring**
+* With applications and services used by customers in other companies, it is even more important that system monitoring gathers application and service usage than it was within a single company.
+*  After all, companies have many more opportunities to quiz their own employees about how well systems work than quizzing employees of other companies.
+
+**Application and Service Life Cycles**
+
+* **Continuous Availability:**  Public cloud users expect applications and services to be "always on and always available."
+* **Zero-Downtime Upgrades:**  Upgrading applications must happen seamlessly without impacting ongoing user activity. 
+* **Failover Mechanisms:**  Designing for failover ensures that application failures only cause brief interruptions, preventing complete outages or data loss.
+
+**Why is this important?**
+
+* **User Experience:**  Downtime and disruptions negatively impact user experience and satisfaction.
+* **Potential Data Loss:**  Outages can lead to data loss, posing a significant risk.
+* **Public Cloud Scrutiny:**  Public cloud environments are subject to more scrutiny compared to private deployments, making outages more visible.
+
+**How to Achieve High Availability:**
+
+* **DevOps Practices:**  Continuous integration and deployment (CI/CD) pipelines can automate testing and deployments, minimizing downtime during updates.
+* **Scalability and Redundancy:**  Designing applications to scale and have redundant components ensures service continuity during failures.
+* **Robust Monitoring:**  Continuously monitoring applications and infrastructure helps identify and address potential issues proactively.
+
+#### The Future of Multicloud Management
+
+* **Hybrid Cloud Fabric:**  Multiple services and deployment models are creating a complex hybrid cloud landscape.
+* **Unified Management:**  The ability to manage all internal and external cloud services is becoming increasingly critical.
+* **Multi-Cloud Complexity:**  Organizations often leverage multiple public cloud providers alongside private and third-party services, leading to significant complexity as deployments scale.
+
+**Essential Questions for Effective Multi-Cloud Management:**
+
+* **Service Inventory:**  Identify all currently used services and anticipate future needs.
+* **Business Alignment:**  Ensure services fulfill specific business requirements.
+* **Security and Governance:**  Verify that all services meet security and governance standards.
+* **Data Residency:**  Confirm that data storage complies with geographical regulations.
+* **Latency Considerations:**  Evaluate overall environment latency to ensure acceptable performance for users.
+
+**Moving Beyond Silos:**
+
+* Avoid managing services as isolated entities (applications, storage, etc.).
+* Implement an infrastructure and approach that provides a unified interface across all services.
+* This ensures consistency, predictability, and simplifies overall management.
