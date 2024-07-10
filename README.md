@@ -1064,3 +1064,129 @@ Standards have generally been established in four ways:
 * A reference
 * Market accepted
 * Retired 
+
+## Categories of Cloud-Related Standards
+
+#### SDOS VS SSOS
+*  Standards Developing Organizations (SDOs)
+*  Standards Setting Organizations (SSOs)  can be differentiated by how they create a standard.
+*  **SDO** comes together to create and develop a standard
+*   **SSOs** only set a standard. An SSO relies on an external body to develop the technical specifications and then subsequently adopts those specifications as a standard.
+*    **For a standard to truly succeed, it needs to be:**
+     - Broadly recognized and adopted by vendors,
+     - Broadly adopted and demanded by consumers,
+     - Open source
+* If these criteria are not met, a “standard” is far from standard and is instead just a document.
+* Establishing cloud standards is important because standards help improve choice, reduce cost, and improve quality.
+*  While standards are being developed in many specific areas, areas, where standards are being broadly developed, include the following:
+   - Interoperability
+   - Portability
+   - Security
+ 
+#### Interoperability
+* Interoperability is the ability for independent systems to work together and/or share information.One of the most important aspects of interoperability is the ability to enable applications to exchange data in a multicloud or on-premises data centre.
+* One of the most important aspects of interoperability is the ability to enable applications to exchange data in a multicloud or on-premises data centre. also includes independent cloud deployments working together, such as public clouds from different vendors or interoperability between a private cloud and an external public cloud.
+* Goal is most easily achieved when one vendor offers cloud products for different contexts: **public**, **private**, and **hybrid clouds**
+* Interoperability is especially important in a multicloud environment because the goal of being able to easily move workloads among multiple clouds requires some means of achieving interoperability
+* APIs are important, but problems can arise. If every cloud provider develops a different API, you run into the problem of API proliferation, a situation where there are so many APIs that organizations have difficulty managing and using them all.
+*  Having proprietary APIs leads to vendor lock-in, which means that once you start using a particular vendor, you are committed to it
+*  One of the most important emerging standards for cloud interoperability and orchestration is **Kubernetes**.
+*  Kubernetes provides an open-source container orchestration platform that can automate the tasks of creating modern applications
+*   Kubernetes has emerged as an important open-source standard that is being widely adopted.
+
+*   Several emerging open-source standards are critical for interoperability that are related to Kubernetes.
+   **Standards** include:
+    - ``**Istio**`` =  a service mesh that is designed to enable services to connect to each other in a secure and controlled manner
+    - ``**Calico**`` = another open-source standard that allows networking and network policy within a Kubernetes cluster across clouds,
+    - ``**Helm**`` = an open-source platform, a package manager for Kubernetes that enables developers to package, configure, and deploy applications and services onto a Kubernetes cluster.
+
+* The benefit of the combination of Kubernetes with services such as Istio, Calico, and Helm is that it permits developers to write services once and deploy them on any cloud
+* With a Kubernetes and microservices approach, developers can push code out to any deployment model without changing the entire app.
+* This capability allows an increased ability to respond to customer feedback, competition, and potential security issues.
+
+* ``**Knative**`` is a pure Kubernetes universal resource model that provides a consistent API-based wrapper service for legacy workloads
+* Knative can work with a variety of models, including Cloud Foundry, OpenShift, and serverless frameworks, such as Apache OpenWhisk and Fission, which are both built on top of Kubernetes and Istio in order to support serverless event driven functions.
+*  ``**Open Services for Lifecycle Collaboration (OSLC)**``= The OSLC is working on the specifications for linked data to be used to federate information and capabilities across cloud services and systems.
+
+*  The following **two interoperability** standards were developed and accepted specifically for the cloud:
+
+1. ``Open Cloud Computing Interface (OCCI)``:A set of standards developed by the Open Grid Forum,OCCI is a protocol and API for all kinds of management tasks and utilizes the REST (Representational State Transfer) approach for interaction. It began its life as a management API for IaaS services,It now supports PaaS and SaaS deployments.
+2. ``The Cloud Data Management Interface (CDMI)``:  Developed by the Storage Networking Industry Association (SNIA), it defines the functional interface that applications should use to create, retrieve, update, and delete data elements from the cloud. It also utilizes a RESTful approach
+
+#### Portability 
+* Portability enables you to take applications, data, or instances running on one vendor’s system and deploy it on another vendor’s implementation.
+* The goal of portability is to allow your components (such as an application or data) to be moved between different contexts without modification.
+* At one time, this would have required each context to provide the same APIs and a set of reusable services to execute consistently.
+* However, new approaches allow portability between contexts regardless of the platform, operating system, location, storage, or anything else in a provider’s environment
+* ``Portability`` of workloads from one cloud to another is a key requirement for mature hybrid computing environments. It is only through standards that portability will happen.
+* the ``**Open Virtualization Format (OVF)**`` developed by the ``**Distributed Management Task Force (DMTF)**`` focuses on portability and interoperability for virtual machines.
+* On the data side, if the data is being moved from one application to a different application, then standard formats and protocols are needed for data to be moved between one environment and another.
+* Most experts believe that this kind of data portability is more difficult than application portability because there are different kinds of data  with different volumes, and that ultimately the control of that data belongs to the data’s owner.
+* The ``**CDMI standard**`` has been approved to help in data portability. Another standard currently under development by the ``IEEE`` is ``IEEE P2301``, Draft Guide for Cloud Portability and Interoperability Profiles (CPIP).
+
+#### Security 
+* Cloud security is a significant concern and one must make sure that the right controls, procedures, and technology are in place to protect your corporate assets.
+*  Your organization has invested a great deal internally to protect your assets, and it is reasonable to assume that your cloud provider will do the same.
+*  A sound security strategy is especially true in a hybrid environment where your private cloud or data centre has touchpoints with public cloud services.
+*  Cloud security standards are a set of processes, policies, and best practices that ensure the proper controls are placed over an environment to prevent application, information, identity, and access issues
+
+*  ``**Authentication and authorization**``: Several standards are in use to verify the identity of a person or computer, including standards associated with the following keys:
+IETF RFC 3820: X.509 Public Key Infrastructure (PKI) Proxy Certificate Profile
+IETF RFC5280: Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile
+ITU-T X.509 | ISO/IEC 9594-8 — The Directory: Public Key and attribute certificate frameworks: Information technology — open systems interconnection.
+* ``**Security monitoring and incident response**``: Some standards have been approved to handle security monitoring and incident response, including the best practices developed by NIST in the NIST SP 800-61Rev. 2 Computer Security Incident Handling Guide.
+* ``**Confidentiality, integrity, and availability of data**``: A number of standards that have been on the market for some time deal with encryption of data, keys, and data transport. These standards include the Key Management Interoperability Protocol (KMIP), developed by OASIS, and FIPS 186-3 Digital Signature Standard (DSS), developed by NIST.
+* ``**Security policy management**``: These standards set forth best practices and procedures for implementing policies around security. FIPS 200: Minimum Security Requirements for Federal Information and Information Systems developed by NIST is an example of this kind of standard.
+
+#### Organizations building Momentum Around Standards
+
+* Some of these standards bodies are not necessarily looking to create new standards. Instead, they are looking to leverage existing best practices and standards, such as those used in implementing the web
+
+**Cloud Security Alliance**
+* The Cloud Security Alliance (CSA) was formed in late 2008 when cloud security became important in users’ minds. Its founding members include Dell, PGP, QualSys, Ascaler, and the Information Systems Audit and Control Association (ISACA).
+* CSA itself is not a formal standards body. However, its objectives include promoting understanding between users and providers of cloud computing regarding security requirements and researching best practices for cloud security.
+
+The CSA offers training in three areas
+- Governance, Risk Management, and Compliance (GRC)
+- Payment Card Industry Data Security Standard (PCI DSS) controls in the cloud
+- Cloud Computing Security Knowledge (CCSK)
+
+* The CSA also provides a certificate in CCSK via a 50-question timed online test
+*  the CSA rolled out its Security, Trust & Assurance Registry (STAR), a free, publicly accessible registry that documents the security controls provided by cloud vendors
+*  The registry is a form of self-regulation by cloud providers and is meant to help ensure that CSA best practices become de facto standards.
+*  Recent reports produced by the CSA include version 3 of its Security Guidance for Critical Areas of Focus in Cloud Computing
+
+#### Distributed Management Task Force (DMTF)
+
+* The ``DMTF`` (www.dmtf.org) has been around for nearly 30 years and may best be known for its common information mode
+* which is a common view of IT equipment. Its goal is to bring the IT industry together to collaborate on systems management standards.
+* The ``DTMF`` formed the Cloud Management Initiative to advance standards and technologies across the various DMTF working groups, including the ``Cloud Management Working Group (CMWG)``, the ``Cloud Auditing Data Federation Working Group (CADF)``, the ``Software Entitlement Working Group (SEWG)``, and the ``Open Virtualization Working Group (OVF)``.
+
+#### Cloud Standards Customer Council (CSCC)
+* The OMG (Object Management Group;ormed in 1989 and is an international group focused on developing enterprise integration standards for a wide range of industries, including government, life sciences, and health care. The OMG creates many working groups that focus on issues important to both vendors and customers.
+* One important group within the OMG is called the Cloud Standards Customer Council (CSCC)
+* The CSCC (www.cloud-council.org) provides modelling standards for software and other processes and has brought together many of the most influential companies in cloud computing.
+* The goal of the CSCC is to establish a set of customer-driven/end-user requirements to ensure cloud users have the same flexibility and openness that they have with traditional IT environments.
+*  CSCC will prioritize key interoperability issues in reference architecture, security and compliance, cloud management, and hybrid clouds.
+
+#### Open Commons Consortium(OCC)
+* The OCC (www.occ=data.org), previously the Open Cloud Consortium, was formed in 2008. One of its goals is to support the development of standards for cloud computing and frameworks for interoperability among clouds.
+* it operates cloud infrastructure. It also manages cloud computing infrastructure to support scientific research
+* The OCC has a number of working groups.
+
+#### The Open Group
+* The Open Group (http://www.opengroup.org/) is a global consortium with more than 400 member organizations that focuses on achieving business objectives through standards.
+* Its goal is to lead the development of vendor-neutral IT standards and certifications. In the cloud, the Open Group Cloud Work Group is looking to create a common understanding among various groups about ensuring safe and secure architectures.
+* The group is working with organizations such as the Cloud Security Alliance to make this happen.
+
+#### Storage Networking Industry Association (SNIA)
+* The SNIA (www.snia.org) has focused for more than 20 years on developing storage solution specifications and technologies, global standards, and storage education.
+*  This organization’s mission is to “lead the storage industry worldwide in developing and promoting vendor-neutral architectures, standards, and educational services that facilitate the efficient management, movement, and security of information.
+*  The SNIA is responsible for the Cloud Data Management Interface. Applications can use this functional interface “to create, retrieve, update and delete data elements from the Cloud.”
+*  Clearly, this standard is important for hybrid cloud environments that deal with data between on-premises and public cloud deployments
+
+#### Vertical Groups
+* vertical industry groups — groups comprised of members from a particular industry such as technology and retail, are also beginning to look at cloud standards.
+
+* ``TeleManagement Forum (TM Forum)``: This large group consists of service providers, cable and network operators, software suppliers, equipment suppliers, and systems integrators. It has provided a standardized operational framework for the creation, delivery, and monetization of digital services. It recently launched its TM Forum Cloud & New Services Initiative that focuses on leveraging these standards into the cloud marketplace.
+* ``Association for Retail Technology Standards (ARTS)``: The goal of this group is to create an open environment where retailers and technology vendors can work together to create international retail technology standards
