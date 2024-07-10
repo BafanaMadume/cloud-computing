@@ -1,4 +1,4 @@
-# CLOUD COMPUTING
+ # CLOUD COMPUTING
 
 ## Outcomes
 * Analyze the different cloud models to design the best solution to support business requirements.
@@ -1200,3 +1200,105 @@ The CSA offers training in three areas
 * Prevent vendor lock-in. Lock-in occurs when you are so entrenched with a particular provider and its interfaces that moving to another provider is too costly
 * Integrate applications more easily between your on-premises data center and private and public cloud environments.
 *  Face it; integrating your assets across multiple environments can be time-consuming and costly if every cloud provider has a proprietary model.Standards help to make integration easier and eliminate many common barriers.
+---
+
+## 6. A Closer Look at Cloud Services
+
+#### Importance of Modularity 
+* This requirement is changing everything from development of software to how those software services are deployed and managed. Therefore, code needs to be designed as lightweight code without dependencies.
+* Each service can be developed and deployed by small independent teams. This flexibility provides greater benefits in terms of performance, cost and scalability.
+* The movement toward a service orientation mindset is still relevant for organizations that want to build robust and flexible systems, achieve quicker time-to-market, and enhance workload portability
+* This containerization is becoming the means of deploying workloads into PaaS (Platform as a Service) cloud environments where an application’s only connection to the environment is through services. 
+* Application containerization has brought about new management frameworks that simplify and streamline service and other workloads. 
+* This requires a more sophisticated approach to managing APIs (Application Programming Interfaces)
+* as a fundamental means of defining services and providing access to applications and other users of services.
+
+## Discovering why services Matter in the cloud
+* The idea of creating services supported by Application Programming Interfaces (APIs) has been around for decades.
+* Today services have been reimagined so that they are the actual building blocks of reusable services.
+* Once cloud services began to explode, it became clear that this new distributed model of computing required an even more comprehensive and sophisticated way of developing, deploying, and managing services.
+* These services had to be able to work independently of each other but be able to be integrated together to create value.
+* These services also had to be designed to operate on different public and private clouds, which meant that there needed to be standardization
+
+### EXPLAINING MICROSERVICES
+* A cloud environment requires that you think differently about what an application is and how it operates in this highly distributed environment.
+*  Cloud-enabled applications are designed to be modular, distributed, deployed, and managed in an automated way.
+* It is common to think that you can simply take an existing monolithic application and simply move it to the cloud. While it is physically possible to place an aging application into a cloud, you gain no advantage in terms of costs or flexibility. The most practical way to gain value from the cloud is to think modular, which is why microservices are so important for cloud computing
+* **Microservices** is a process of developing applications that consist of code that is independent of each other and of the underlying developing platform.
+* Once created, each microservice runs a unique process and communicates through well-defined and standardized APIs.
+* These services are defined in a catalogue so that developers can more easily locate the right service and understand the governance rules for usage.
+
+**Why are microservices so important for a true cloud environment? Consider these four key benefits**
+
+* **Application development** is simplified because each microservice is built to serve a specific and limited purpose.Small development teams can focus on writing code for narrowly defined and more easily understood functions.
+* Code changes will be smaller and less complex than with a complex integrated application, making it easier and faster to make changes, whether to fix a problem or to upgrade a service with new requirements.
+* **Scalability **— both up and down — makes it simpler to deploy an additional instance of a service or change that service as needs evolve.
+* Microservices are fully tested and validated. When new applications leverage existing microservices, developers can assume the integrity of the new application without the need for continual testing.
+
+**The Imperative to Manage Microservices**
+* Microservices are designed to be packaged within containers.
+* Containers provide a technique for packaging applications so that they are abstracted from their runtime environments. 
+Containers are then managed through orchestration services.
+* These orchestration services are needed to manage both process and logic as well as data services.
+* Orchestration services are designed to determine how and where the logic is deployed and how it is managed without worrying about version numbers and application-specific configuration issues.
+* it is a game of numbers; often many microservices and many instances of microservices are distributed over many systems
+* Combining microservices with Kubernetes creates a compelling way for organizations to optimize their environment for the cloud.
+
+## Containers
+
+* **Docker**, **CRI-O**, **Containerd**, and **frakti** are four of the most common container run times.
+* You can think of a container as packaged up software code along with all of its dependencies so that it can run consistently across clouds and on premises.
+* This packaging up of code is often call **encapsulation**. **Encapsulating** code is significant for developers because they do not have to develop code based on each individual environment.
+* With **containerization**, a developer can transfer code from a desktop to a **virtual machine (VM)** or from a Windows operating system to Linux running on a public cloud, with the confidence that the code will execute in a predictable way.
+* The single container package eliminates the complexities of bundling the application code together with the related configuration files, libraries, and dependencies required for it to run.
+
+**Containers Bring Virtualization Abstraction to the Next Level**
+
+* Containers build on the virtualization concept. Traditional applications ran on physical servers and utilized the computing resources of that infrastructure.
+* To ensure that applications would run predictably, businesses placed each application on its own server
+* Virtualization dramatically changed the way businesses approached application deployment. In essence, virtualization “tricks” the hardware into thinking there are multiple servers.
+* The VM allows companies to abstract servers from the underlying hardware. Each VM runs its own operating system and can be completely isolated from other VMs running on the same hardware. From a cost perspective, VMs, of course, make sense; you no longer need to purchase more and more hardware to support new projects.
+
+* Containerization technology brings the abstraction layer to the next level: Containers abstract the operating system.
+*  a container or cluster of containers can run directly on top of the operating system kernel.
+*  Containers eliminate the need for each application to have its own operating system.
+*  This advancement means that containers are dramatically smaller than virtual machines and can be spun up more quickly and more easily moved between on-premises and the cloud and between cloud environments.
+*  Containers are highly portable between environments because they carry with them all their dependencies.
+
+*  Companies, such as Facebook, Netflix, and Uber, must constantly change their platforms to adapt to changing user expectations.
+*  All these companies take advantage of continuous integration and continuous delivery (CI/CD), containerization, and microservices to help quickly respond to customer demands and market conditions.
+
+**CONTAINER ORCHESTRATION**
+* As we begin to containerize applications and microservices, you need a way to manage your containers.
+*  A single application can be made up of hundreds or even thousands of containers.
+*  Containers orchestration platforms help to streamline processes like the installation, scaling, and management of containerized applications.
+*  The platform also automates the management of a container environment.
+*  Scaling containerized applications for higher demand, updating applications, controlling the versioning of containers, and providing monitoring, logging, and debugging of containers are all processes that are assisted by the orchestration platform.
+*  Kubernetes is the most popular container orchestration platform
+
+**Kubernates**
+* Kubernetes (often called “k8s” or “kube” by developers) is an open-source platform for managing containerized workloads and services.
+* Kubernetes is Greek for helmsman or captain, hence the logo contains a helm and many of the ancillary Kubernetes technologies have nautical names, such as Helm, Rudr, Harbor, and others.
+* One way to think about Kubernetes is to understand its relationship to other services. For example, think of microservices as the content of the service and containers as the wrapper. Now, think of Kubernetes as the way that the microservices managed within containers are brought together based on the defined workflow
+*  Kubernetes is not the only container orchestration platform.
+*  Other platforms, including open-source projects like Docker, Swarm, and Apache Mesos along with platforms tied to a specific cloud, like Amazon Elastic Container Service (Amazon ECS), emerged early on and continue to have users.
+*  Kubernetes has become the dominant choice for developers.
+*   The market has coalesced around Kubernetes because of its functionality, large and growing ecosystem, and portability between on premises, multiple public cloud environments, and private clouds.
+
+* Kubernetes has become a de facto standard across many businesses and clouds.Kubernetes has matured into a computing platform and ecosystem that helps organizations develop cloud native applications that can span multiple public and private clouds as well as on-premises architecture.
+* Because Kubernetes has such a large open-source contributing community, the platforms support a large and rapidly growing ecosystem of tools and services, including Prometheus (an open-source tool for monitoring), Istio (an open-source service meshes), Kaniko (an open-source tool for building containers), and Open Tracing (an open-source tool for distributed tracing).
+* Kubernetes provides a platform for automating the development, scaling, and operation of systems across a cluster of hosts.
+
+**Primary Benefits of Kubernetes include**
+1. A standardized way to build, package, deploy, and run applications of any language,
+2. Portability across multiple cloud providers and the ability to avoid vendor lock-in
+3. Horizontal auto-scaling so that additional pods are created as application demand increases,
+4. High availability through continual health checks to ensure that nodes and containers are operating as expected
+5. Automated rollouts to updated applications or its configurations without causing downtime.
+
+* Kubernetes provides tools for application deployment, service discovery, scheduling, updating, maintenance, and scaling.
+* Kubernetes is extensible so it can support a variety of use cases across many different implementations.
+* Kubernetes is designed to sit on top of the physical infrastructure.
+* Kubernetes has a built-in set of rudimentary tools that allow you to monitor your servers.
+* it is possible to add components to gain visibility into Kubernetes.
+* Custom Resource Definitions (CRD) are the way to extend Kubernetes and still leverage capabilities from the platform. CRD extends the API so that additional services can be added to the cluster.
