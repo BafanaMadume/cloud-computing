@@ -1190,3 +1190,13 @@ The CSA offers training in three areas
 
 * ``TeleManagement Forum (TM Forum)``: This large group consists of service providers, cable and network operators, software suppliers, equipment suppliers, and systems integrators. It has provided a standardized operational framework for the creation, delivery, and monetization of digital services. It recently launched its TM Forum Cloud & New Services Initiative that focuses on leveraging these standards into the cloud marketplace.
 * ``Association for Retail Technology Standards (ARTS)``: The goal of this group is to create an open environment where retailers and technology vendors can work together to create international retail technology standards
+
+## The Impact Of Standards On The Multicloud
+* Standards, whether developed by SDOs or through the de facto method, play an important role in cloud computing and in a multicloud model.
+* In a multicloud world, many interfaces are between those that exist at your cloud provider and your applications, data, servers,
+
+**Standards let you do the following:**
+* Move your infrastructure or applications from one cloud provider to another. With cloud standards across clouds, you do not have to rewrite code. In a multicloud world, where you may have part of the resources associated with an application on your own premises and part with a cloud provider, this capability is important because it enables your organization to be more flexible about where your resources may be located.
+* Prevent vendor lock-in. Lock-in occurs when you are so entrenched with a particular provider and its interfaces that moving to another provider is too costly
+* Integrate applications more easily between your on-premises data center and private and public cloud environments.
+*  Face it; integrating your assets across multiple environments can be time-consuming and costly if every cloud provider has a proprietary model.Standards help to make integration easier and eliminate many common barriers.
