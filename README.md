@@ -1302,3 +1302,67 @@ Containers are then managed through orchestration services.
 * Kubernetes has a built-in set of rudimentary tools that allow you to monitor your servers.
 * it is possible to add components to gain visibility into Kubernetes.
 * Custom Resource Definitions (CRD) are the way to extend Kubernetes and still leverage capabilities from the platform. CRD extends the API so that additional services can be added to the cluster.
+
+
+#### Cataloguing Services
+* When you move to a microservices approach, you need to be able to keep track of each service as well as understand everything about that service.
+* First and foremost, you must know that the service has been fully vetted.
+* Under what conditions is it approved for use?
+* A microservice can contain a variety of capabilities, such as application services, networking services, and data services
+
+## Defining Cloud Native Applications
+* The cloud model has changed these restrictions. As the cloud continues to mature, the way application services are designed has evolved.
+* The solution is a cloud native application approach. Cloud native is a software framework designed with microservices, containers, and dynamic orchestration as well as continuous delivery of software.
+* Every part of the cloud native application is housed within its own container and dynamically orchestrated with other containers to optimize the way resources are utilized.
+* The idea of cloud native was codified by The Cloud Native Computing Foundation (CNCF), an organization founded in 2015 under the auspices of the Linux Foundation
+* According to the foundation’s documentation, “The Cloud Native Computing Foundation states that they build sustainable ecosystems and fosters a community around a constellation of high-quality projects that orchestrate containers as part of a microservices architecture.”
+* The founding members of CNCF are some of the most important companies in the public and private cloud market and include Google, Twitter, Huawei, Intel, Cisco, IBM, Docker, Univa, and VMware.
+
+The Cloud Native Computing Foundation offers a clear definition of cloud native
+
+* **Container Packaged**: A standard way to package applications that is resource efficient.more applications can be densely packed using a standard container format.
+* **Dynamically managed**: A standard way to discover, deploy, and scale up and down containerized applications.
+* **Microservices oriented**: A method to decompose the application into modular, independent services that interact through well-defined service contracts.
+---
+
+**Moving from virtual machines to cloud Native**
+
+* Cloud computing has evolved significantly over the past decade making it easier for developers to quickly gain access to compute and storage capabilities and create a platform for applications creation and deployment.
+*  Developers have relied on virtual machines as a technique to create cloud services.
+*  However, virtual machines sit on a layer of software, including the operating system, middleware, and tools, which makes the VM more complex and slows down the process of continuous integration and rapid applications development.
+*  virtual machines will continue to be an important software layer for many years to come, containers and container orchestration will become increasingly important.
+---
+
+**Creating Innovation**
+
+* Optimizing business value means that applications can take advantage of the distributed, scalable architecture the cloud platform provides in order to offer the highest levels of flexibility, scalability, and reusability.or a cloud native application, this is where true innovation lies today
+* A cloud native application fully exploits the benefits of cloud technology. It is important to recognize that a cloud native application is not defined by where it is running, but rather how it is built. Because a cloud native environment is based on containerization, it is not physically tied to a specific hardware or operating system. Therefore, cloud native applications are designed to work on a variety of cloud environments.
+
+---
+**Differentiating cloud Native Applications**
+
+* Traditionally, many organizations considered the cloud because of lower costs — a valid reason, but a limited one.
+* Prior to being able to build cloud native applications, cost savings was often the main driver. Cloud native applications enable businesses to shift from focusing exclusively on cost savings to being able to quickly build applications that bring a competitive advantage.
+* In a highly fluid business environment, adding differentiation and value is critical for success.
+* Cloud native applications are built to run on hardware that is modular and automated, allowing them to become both resilient and predictable.
+*  Performance and scalability become important benefits, resulting from the ability to flexibly deploy workloads wherever they need to be.
+*  While DevOps methodologies are not unique to cloud native application development, DevOps is a necessary component of cloud native applications.
+*  The collaboration associated with a DevOps approach involves the integration of processes, tools, and, of course, developers.
+*  DevOps creates an environment where software can be written, tested, and released quickly and as often as needed with minimum disruption.
+*   DevOps can be the enabler of an organization’s CI/CD goals because the software modules created for a cloud native application can be released continuously and in an automated fashion.
+
+## Communicating Using APIs
+
+* APIs have been used extensively in the past for communicating with and connecting various IT assets
+* hey are an important connectivity mechanism for the way services are combined to create an application. In addition, at the Infrastructure as a Service (IaaS) level, APIs are used to provide control and distribution mechanisms for resources, such as provisioning.
+* At the application level, Software as a Service (SaaS) APIs furnish the ability to connect applications with the underlying infrastructure and, when applicable, cloud resources.
+* APIs become even more critical when one or more cloud providers are involved. In these multicloud cases, your API strategy needs to consider the APIs provided by the cloud providers themselves to allow connectivity and communication with their clouds. Many cloud providers are offering more generic (for example, HTTP) integration capabilities to make it easy for their customers to integrate and access resources.
+
+#### The Google Maps API
+
+* One common example of an API that nearly everyone has experienced is Google Maps. Google publishes an API that allows organizations to embed a Google Map into their own web and mobile applications or onto a website.
+* The initial cost of using the Google Maps API is free, but if a business’s application requires many thousands of calls, it will begin to be billed by Google for the use of the service
+* With microservices typically deployed in the form of containers, the interprocess communication mechanisms used with microservices are different from traditional applications.
+*  Because the microservices are more granular, so, too, are the APIs. Client data requests may span a number of microservices, requiring the request to follow a one-to-many form of interaction.
+*  A number of API platforms, including API management platforms, are available today that address a variety of needs in the cloud.
+*  Choosing the right API platform involves a careful assessment of the application environment.
