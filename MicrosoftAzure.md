@@ -234,3 +234,36 @@ Terraform is also supported on Azure. IaC creates a great advantage, and it enab
 
 Azure provides third-party support for other automated IaC platforms like Terraform, Red Hat Ansible, Chef Automate, and Pulumi.
 * 
+
+
+
+## Azure Cost Management and Billing
+* An administrative section in Microsoft Azure where billing and management of costs can be controlled and monitored.
+
+**Total Cost of Ownership (TCO) calculator**
+* A great tool that helps organizations estimate the cost savings by https://azure.microsoft.com/en-us/pricing/tco/calculator/ [migrating workloads to Azure estimations].
+
+**Azure Pricing Calculator**
+* A dedicated website where you can configure and estimate the costs for Azure products and features based on your use case scenarios in our projects.
+
+
+### BASIC CONCEPTS OF USER IDENTITIES ,ROLES ,ACTIVE DIRECTORIES
+
+* Azure Active Directory (Azure AD) as shown in Figure 15 is the identity and user access management service of Microsoft
+* The users of Azure AD can manage their users’ identities, their roles, logins, and access to internal resources as well as permissions to external services like Azure Portal, Office 365, and other applications.
+
+### Azure Role-Based Access Control (AZURE RBAC)
+
+* The Azure Role-based Access Control (RBAC) helps in user access management of resources in Azure. RBAC helps in controlling what users can do.
+* Azure RBAC is a system for authorization and access management of resources within the Azure platform.
+
+**AZURE ROLES**
+1. **SECURITY PRINCIPAL** = A security principal is an object that represents a security identity that can be authenticated and authorized to access resources.Security principals are used in Azure roles to grant or deny resource permissions. When you assign roles to a security principal, you are granting or denying permissions to access specific resources in Azure.
+- Contributor” role to a user principal, allowing users to create and manage resources in a specific Azure 
+   subscription.
+2. **Role Definition** = A role definition sets permissions for Azure users or service principals to utilize Azure resources,Role definitions define permissions for security principals to access resources in Azure.Each role definition has a set of access controls, or actions, which helps in determining which Azure resource activities can be done.A role definition may allow reading, writing, and deleting Azure subscription resources.
+-  The built-in role definitions, such as “Contributor” and “Reader,” address common resource access scenarios.
+
+3. Scope
+   - The scope of a role determines the level at which the role assignment applies. The scope defines the set of resources the role assignment applies to and can be set at various levels in the Azure resource hierarchy, including the management group, subscription, resource group, and individual resource levels.
+
